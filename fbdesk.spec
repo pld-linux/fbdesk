@@ -15,8 +15,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This package include an application to create and manage icons on
-fluxbox desktop. It suports antyaliasking, XPM and PNG icons. You can
-put text above or below, left or at right side icons. Supports UTF-8.
+fluxbox desktop. It supports antialiasing, XPM and PNG icons. You can
+put text above or below, at the left or right side icons. Supports
+UTF-8.
 
 %description -l pl
 Ten pakiet zawiera narzêdzie do tworzenia i zarz±dzania ikonami na
