@@ -2,12 +2,12 @@ Summary:	Application to create and manage icons on fluxbox desktop
 Summary(pl):	Aplikacja do tworzenia i zarz±dzania ikonami w fluxboksie
 Name:		fbdesk
 Version:	1.1.5
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		X11/Window Managers/Tools
 Source0:	http://fluxbox.org/download/%{name}-%{version}.tar.gz
 # Source0-md5:	c41319c9a2a03cf4d7d5e0586e57cba6
-Patch0:		%{name}-XFT.patch
+Source1:	xft.m4
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -31,10 +31,10 @@ albo z prawej strony. Obs³uguje UTF-8.
 
 %prep
 %setup -q
-%patch0 -p0
+install %{SOURCE1} .
 
 %build
-%{__aclocal}
+%{__aclocal} -I .
 %{__autoconf}
 %{__automake}
 %configure
