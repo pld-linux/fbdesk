@@ -8,6 +8,7 @@ Group:		X11/Window Managers/Tools
 Source0:	http://fluxbox.org/download/%{name}-%{version}.tar.gz
 # Source0-md5:	c41319c9a2a03cf4d7d5e0586e57cba6
 Source1:	xft.m4
+Patch0:		%{name}-event.patch
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -31,6 +32,7 @@ albo z prawej strony. Obs³uguje UTF-8.
 
 %prep
 %setup -q
+%patch0 -p1
 install %{SOURCE1} .
 
 %build
