@@ -14,26 +14,25 @@ Requires:	fluxbox
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This package include an application to create and manage icons
-on fluxbox desktop. It suports antyaliasking, XPM and PNG icons.
-You can put text above or below, left or at right side icons.
-Supports UTF-8.
+This package include an application to create and manage icons on
+fluxbox desktop. It suports antyaliasking, XPM and PNG icons. You can
+put text above or below, left or at right side icons. Supports UTF-8.
 
 %description -l pl
-Ten pakiet zawiera narzêdzie do tworzenia i zarz±dzania ikonami na 
-pulpicie fluxbox'a. Wspiera antyaliasing, ikony zarówno w formacie XPM 
-jak i PNG. Tekst mo¿e byæ umiejscowiony pod lub nad ikonami, z lewej albo
-z prawej strony. Obs³uguje UTF-8.
+Ten pakiet zawiera narzêdzie do tworzenia i zarz±dzania ikonami na
+pulpicie fluxbox'a. Wspiera antyaliasing, ikony zarówno w formacie XPM
+jak i PNG. Tekst mo¿e byæ umiejscowiony pod lub nad ikonami, z lewej
+albo z prawej strony. Obs³uguje UTF-8.
 
 %prep
-%setup  -q 
+%setup  -q
 %patch0 -p0
 
 %build
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure 
+%configure
 %{__make}
 
 %install
