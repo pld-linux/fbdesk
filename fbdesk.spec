@@ -10,6 +10,7 @@ Source0:	http://fluxbox.org/download/%{name}-%{version}.tar.gz
 Source1:	xft.m4
 Patch0:		%{name}-event.patch
 Patch1:		%{name}-types.patch
+URL:		http://www.fluxbox.org/fbdesk/
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
