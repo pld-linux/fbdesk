@@ -2,7 +2,7 @@ Summary:	Application to create and manage icons on fluxbox desktop.
 Summary(pl):	Aplikacja do tworzenia i zarzadzania ikonami w fluxbox'ie.
 Name:		fbdesk
 Version:	1.1.3
-Release:	0.9
+Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://fluxbox.org/download/%{name}-%{version}.tar.gz
