@@ -1,0 +1,51 @@
+Summary:	Application to create and manage icons on fluxbox desktop.
+Summary(pl):	Aplikacja do tworzenia i zarzadzania ikonami w fluxbox'ie.
+Name:		fbdesk
+Version:	1.1.3
+Release:	0.9
+License:	GPL
+Group:		Applications/System
+Source0:	http://fluxbox.org/download/%{name}-%{version}.tar.gz
+Patch0:		%{name}-XFT.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libpng-devel
+Requires:	fluxbox
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%description
+This package include an application to create and manage icons
+on fluxbox desktop. It suports antyaliasking, XPM and PNG icons.
+You can put text above or below, left or at right side icons.
+Supports UTF-8.
+
+%description -l pl
+Ten pakiet zawiera narzêdzie do tworzenia i zarz±dzania ikonami na 
+pulpicie fluxbox'a. Wspiera antyaliasing, ikony zarówno w formacie XPM 
+jak i PNG. Tekst mo¿e byæ umiejscowiony pod lub nad ikonami, z lewej albo
+z prawej strony. Obs³uguje UTF-8.
+
+%prep
+%setup  -q 
+%patch0 -p0
+
+%build
+%{__aclocal}
+%{__autoconf}
+%{__automake}
+%configure 
+%{__make}
+
+%install
+rm -rf $RPM_BUILD_ROOT
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT \
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc COPYING ChangeLog INSTALL README
+%attr(755,root,root) %{_bindir}/*
