@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://fluxbox.org/download/%{name}-%{version}.tar.gz
+# Source0-md5:	e61af985ffe03a84e8ba89dfa02f5cba
 Patch0:		%{name}-XFT.patch
 BuildRequires:	XFree86-devel
 BuildRequires:	XFree86-xft-devel
