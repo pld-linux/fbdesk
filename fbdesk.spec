@@ -4,12 +4,14 @@ Name:		fbdesk
 Version:	1.1.3
 Release:	1
 License:	GPL
-Group:		Applications/System
+Group:		X11/Window Managers/Tools
 Source0:	http://fluxbox.org/download/%{name}-%{version}.tar.gz
 Patch0:		%{name}-XFT.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libpng-devel
+BuildRequires:	XFree86-devel
+BuildRequires:	XFree86-xft-devel
 Requires:	fluxbox
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
