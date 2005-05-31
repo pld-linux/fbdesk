@@ -14,6 +14,8 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libpng-devel
 BuildRequires:	libstdc++-devel
+BuildRequires:	libtool
+BuildRequires:	pkgconfig
 BuildRequires:	xft-devel
 Requires:	fluxbox
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
