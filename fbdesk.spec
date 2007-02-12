@@ -1,5 +1,5 @@
 Summary:	Application to create and manage icons on fluxbox desktop
-Summary(pl):	Aplikacja do tworzenia i zarz±dzania ikonami w fluxboksie
+Summary(pl.UTF-8):   Aplikacja do tworzenia i zarzÄ…dzania ikonami w fluxboksie
 Name:		fbdesk
 Version:	1.2.1
 Release:	1
@@ -26,11 +26,11 @@ fluxbox desktop. It supports antialiasing, XPM and PNG icons. You can
 put text above or below, at the left or right side icons. Supports
 UTF-8.
 
-%description -l pl
-Ten pakiet zawiera narzêdzie do tworzenia i zarz±dzania ikonami na
-pulpicie fluxboksa. Wspiera antyaliasing, ikony zarówno w formacie XPM
-jak i PNG. Tekst mo¿e byæ umiejscowiony pod lub nad ikonami, z lewej
-albo z prawej strony. Obs³uguje UTF-8.
+%description -l pl.UTF-8
+Ten pakiet zawiera narzÄ™dzie do tworzenia i zarzÄ…dzania ikonami na
+pulpicie fluxboksa. Wspiera antyaliasing, ikony zarÃ³wno w formacie XPM
+jak i PNG. Tekst moÅ¼e byÄ‡ umiejscowiony pod lub nad ikonami, z lewej
+albo z prawej strony. ObsÅ‚uguje UTF-8.
 
 %prep
 %setup -q
