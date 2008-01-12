@@ -3,21 +3,24 @@ Summary(pl.UTF-8):	Aplikacja do tworzenia i zarządzania ikonami w fluxboksie
 Name:		fbdesk
 Version:	1.4.1
 Release:	2
-License:	BSD-like
+License:	MIT
 Group:		X11/Window Managers/Tools
 Source0:	http://fluxbox.org/download/%{name}-%{version}.tar.gz
 # Source0-md5:	b65136d2d52524492c8a5bc233b7f34b
 Source1:	xft.m4
 URL:		http://www.fluxbox.org/fbdesk/
-BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	imlib2-devel
+BuildRequires:	imlib2-devel >= 1.0.0
 BuildRequires:	libpng-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
+BuildRequires:	xorg-lib-libX11-devel
+BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	xorg-lib-libXft-devel
+BuildRequires:	xorg-lib-libXpm-devel
+BuildRequires:	xorg-lib-libXrender-devel
 Requires:	fluxbox
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -56,4 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog README
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/fbdesk
